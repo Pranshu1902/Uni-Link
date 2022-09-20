@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import logo from "../Images/logo.png";
+import preview from "../Images/preview.png";
 
 export default function Home() {
   useEffect(() => {
@@ -23,6 +24,9 @@ export default function Home() {
           >
             Home
           </a>
+        </div>
+        <div className="flex items-center justify-center">
+          <img src={preview} alt="" />
         </div>
       </div>
     </div>
