@@ -3,7 +3,6 @@ import { Link, navigate } from "raviger";
 
 export default function Dashboard() {
   const notificationsCount = 0;
-  //   const [notificationsCount, setNotificationsCount] = useState(0);
 
   const logoutUser = () => {
     localStorage.removeItem("token");
