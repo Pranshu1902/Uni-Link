@@ -1,9 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import one from "../Images/1.png";
 import Header from "../Common/Header";
 
 export default function Profile() {
   const [toggleDashboard, setToggleDashboard] = useState(false);
+
+  useEffect(() => {
+    document.title = "Profile | Uni Link";
+  });
 
   return (
     <div className="flex bg-gray-100">

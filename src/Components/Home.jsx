@@ -1,6 +1,10 @@
+import { useEffect } from "react";
 import logo from "../Images/logo.png";
 
 export default function Home() {
+  useEffect(() => {
+    document.title = "Uni-Link";
+  }, []);
   return (
     <div className="bg-gradient-to-bl from-[#091360]  to-[#2c55ea] min-h-screen p-2 text-[#66fcf1]">
       <div>

@@ -1,8 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "../Common/Header";
 
 export default function Notification() {
   const [toggleDashboard, setToggleDashboard] = useState(false);
+
+  useEffect(() => {
+    document.title = "Notifications | Uni Link";
+  });
+
   return (
     <div className="flex">
       <div className={`${toggleDashboard ? "absolute" : ""} p-4 md:hidden`}>
@@ -22,13 +27,14 @@ export default function Notification() {
         </p>
         <div className="pt-12 flex flex-wrap font-bold gap-6">
           <div className="bg-[#99D98C] p-4 rounded-lg w-fit text-2xl">
-            Your complaint has been recieved!
-          </div>
-          <div className="bg-[#d98c8c] p-4 rounded-lg w-fit text-2xl">
-            Your leave request has been rejected!
+            You have successfully submitted your applicatiom for Web developer
+            role at HackClub.
           </div>
           <div className="bg-[#99D98C] p-4 rounded-lg w-fit text-2xl">
-            Your health report requst has been recieved!
+            Congratulations, your team won the ideathon: Envisage!
+          </div>
+          <div className="bg-[#d98c8c] p-4 rounded-lg w-fit text-2xl">
+            Unfortunately, your team didn't win the MIC hackathon.
           </div>
         </div>
       </div>

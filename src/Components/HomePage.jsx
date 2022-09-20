@@ -72,7 +72,7 @@ export default function HomePage() {
   ];
 
   useEffect(() => {
-    document.title = "Uni Link";
+    document.title = "Home | Uni Link";
   });
 
   return (

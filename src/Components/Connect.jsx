@@ -1,11 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "../Common/Header";
-import Modal from "../Common/Modal";
-import NewHealthReport from "./NewHealthReport";
 
 export default function Connect() {
   const [toggleDashboard, setToggleDashboard] = useState(false);
-  const [newReport, setNewReport] = useState(false);
 
   const students = [
     {
@@ -67,6 +64,10 @@ export default function Connect() {
     },
   ];
 
+  useEffect(() => {
+    document.title = "Connect | Uni Link";
+  });
+
   return (
     <div className="flex bg-gray-100">
       <div className={`${toggleDashboard ? "absolute" : ""} p-4 md:hidden`}>
@@ -119,9 +120,6 @@ export default function Connect() {
           </div>
         </div>
       </div>
-      <Modal open={newReport} setOpen={() => setNewReport(false)}>
-        <NewHealthReport close={() => setNewReport(false)} />
-      </Modal>
     </div>
   );
 }

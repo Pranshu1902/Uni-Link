@@ -2,13 +2,10 @@ import { useState } from "react";
 import Header from "../Common/Header";
 import { Button } from "@mui/material";
 import SlideBar from "../Common/Elements/SlideBar";
-import Modal from "../Common/Modal";
-import NewHealthReport from "./NewHealthReport";
 import { useEffect } from "react";
 
 export default function Blogs() {
   const [toggleDashboard, setToggleDashboard] = useState(false);
-  const [newReport, setNewReport] = useState(false);
 
   useEffect(() => {
     document.title = "Blogs | Uni-Link";
@@ -44,7 +41,7 @@ export default function Blogs() {
         </div>
         <div>
           <div className="flex justify-end p-2">
-            <Button onClick={() => setNewReport(true)} variant="contained">
+            <Button variant="contained">
               <i className="fa fa-plus"></i>&nbsp; New Blog
             </Button>
           </div>
@@ -53,9 +50,6 @@ export default function Blogs() {
           </div>
         </div>
       </div>
-      <Modal open={newReport} setOpen={() => setNewReport(false)}>
-        <NewHealthReport close={() => setNewReport(false)} />
-      </Modal>
     </div>
   );
 }

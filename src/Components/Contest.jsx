@@ -1,12 +1,13 @@
 import { Button } from "@mui/material";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "../Common/Header";
-import Modal from "../Common/Modal";
-import NewComplaint from "./NewComplaints";
 
 export default function Contest() {
   const [toggleDashboard, setToggleDashboard] = useState(false);
-  const [newComplaint, setNewComplaint] = useState(false);
+
+  useEffect(() => {
+    document.title = "Contests | Uni Link";
+  });
 
   const students = [
     {
@@ -82,7 +83,7 @@ export default function Contest() {
         </div>
         <div>
           <div className="flex justify-end p-2 pt-4">
-            <Button onClick={() => setNewComplaint(true)} variant="contained">
+            <Button variant="contained">
               <i className="fa fa-plus"></i>&nbsp; Host New Contest
             </Button>
           </div>
@@ -109,9 +110,6 @@ export default function Contest() {
           </div>
         </div>
       </div>
-      <Modal open={newComplaint} setOpen={() => setNewComplaint(false)}>
-        <NewComplaint close={() => setNewComplaint(false)} />
-      </Modal>
     </div>
   );
 }

@@ -1,12 +1,9 @@
 import { Button } from "@mui/material";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "../Common/Header";
-import Modal from "../Common/Modal";
-import NewComplaint from "./NewComplaints";
 
 export default function Internship() {
   const [toggleDashboard, setToggleDashboard] = useState(false);
-  const [newComplaint, setNewComplaint] = useState(false);
 
   const students = [
     {
@@ -52,6 +49,10 @@ export default function Internship() {
     },
   ];
 
+  useEffect(() => {
+    document.title = "Internship | Uni Link";
+  });
+
   return (
     <div className="flex bg-gray-100">
       <div className={`${toggleDashboard ? "absolute" : ""} p-4 md:hidden`}>
@@ -82,7 +83,7 @@ export default function Internship() {
         </div>
         <div>
           <div className="flex justify-end p-2 pt-4">
-            <Button onClick={() => setNewComplaint(true)} variant="contained">
+            <Button variant="contained">
               <i className="fa fa-plus"></i>&nbsp; Add New Intership
             </Button>
           </div>
@@ -109,9 +110,6 @@ export default function Internship() {
           </div>
         </div>
       </div>
-      <Modal open={newComplaint} setOpen={() => setNewComplaint(false)}>
-        <NewComplaint close={() => setNewComplaint(false)} />
-      </Modal>
     </div>
   );
 }
