@@ -2,7 +2,7 @@
 ![Logo](https://github.com/Pranshu1902/Uni-Link/assets/70687348/4f079284-33b3-4a8b-acfc-a79ce6bae775)
 
 # Uni-Link
-The connection that every college needs
+The connection that every college needs!
 
 A platform to connect students and different clubs of a college all at one platform also allows them to learn about new opportunities and interact with their peers.
 
