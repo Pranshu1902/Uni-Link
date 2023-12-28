@@ -1,70 +1,62 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Logo](https://github.com/Pranshu1902/Uni-Link/assets/70687348/4f079284-33b3-4a8b-acfc-a79ce6bae775)
 
-## Available Scripts
+# Uni-Link
+The connection that every college needs
 
-In the project directory, you can run:
+A platform to connect students and different clubs of a college all at one platform also allows them to learn about new opportunities and interact with their peers.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Apply to clubs in university
+- Participate in club events
+- Learn about opportunities
+- Post events like Hackathons/Conferences
+- Read Blogs from peers
+- Connect with like-minded people
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Run Locally
 
-### `npm run build`
+Clone the project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+  git clone git@github.com:Pranshu1902/Uni-Link.git
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Go to the project directory
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+  cd Uni-Link
+```
 
-### `npm run eject`
+Install dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+  npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Start the server
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+  npm run start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Tech Stack
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Client:** React, TailwindCSS
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Server:** Node, Express
 
-### Code Splitting
+**Database:** MongoDb
+## Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Screenshot from 2023-12-29 00-04-23](https://github.com/Pranshu1902/Uni-Link/assets/70687348/0d38c2e1-8d97-47a4-aca1-42e3223742b0)
 
-### Analyzing the Bundle Size
+![Screenshot from 2023-12-29 00-04-27](https://github.com/Pranshu1902/Uni-Link/assets/70687348/beea3767-939a-41ff-bf8b-b0283c1408f8)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Screenshot from 2023-12-29 00-04-33](https://github.com/Pranshu1902/Uni-Link/assets/70687348/3d77e9cb-d0fa-4a15-a684-974d439d69d0)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Screenshot from 2023-12-29 00-04-38](https://github.com/Pranshu1902/Uni-Link/assets/70687348/ce1072a6-6a2d-4fd4-b8cd-e73bcea663fd)
